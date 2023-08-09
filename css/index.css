@@ -1,15 +1,25 @@
+html {
+    scroll-behavior: smooth;
+  }
+#home {
+    scroll-margin: 200px;
+
+}
 .container {
     max-width: 1100px;
     width: 1100px;
     padding: 0; 
 }
+.font2 {
+    font-family: 'ocr-b-10-bt-regular', sans-serif;
+}
 
 .container2 {
-    max-width: 1100px;
     width: 1100px; 
+    max-width: auto;
     padding: 0; 
     margin: auto; 
-    margin-top: 30px; 
+    margin-top: 120px; 
 }
 
 .blockcontainer {
@@ -18,6 +28,7 @@
     display: inline-flex;
 }
 
+
 #left {
     max-width: 300px;
 }
@@ -25,6 +36,7 @@
     max-width: 800px;
     margin-left: 50px; 
     margin-top: 10px; 
+    font-family: "Alkes Semibold";
 }
 #name {
     text-align: center;
@@ -42,14 +54,23 @@
     justify-content: center;
     width: 245px; 
 }
-.bi {
+.icons a {
+    width: 45px; 
+    text-align: center;
+    color: black; 
+}
+.icons a:hover {
+    color: darkblue; 
+    cursor: pointer; 
+}
+.bi2 {
     font-size: 23px; 
     width: 37px; 
     text-align: center;
 }
-.bi:hover {
-    color: darkblue;
-    cursor: pointer;
+.bi3 {
+    font-size: 23px; 
+    width: 37px;
 }
 
 .nav-link {
@@ -65,4 +86,202 @@
     line-height: 34px;
     display: inline-flex;
     font-family: "Alkes Semibold";
+}
+
+/* Subcontainer for Education, experience */
+#subcontainer {
+    margin-top: 16px;
+    display: inline-flex;
+    font-family: "Alkes Semibold";
+}
+.univheader {
+    display: inline-flex;
+    font-size: 19px; 
+    line-height: 23px;
+}
+.desc {
+    font-size: 14px;
+    color: rgb(72, 72, 72);
+}
+
+#experience {
+    margin-left: 50px; 
+}
+/* Research Section*/
+.research {
+    font-family: "Alkes Semibold";
+}
+#researchheader {
+    margin-bottom: 25px; 
+    scroll-margin: 75px;
+}
+.researchitem {
+    display: inline-flex;
+}
+.research img {
+    width: 230px; 
+}
+/* Work Experience */
+#workexpheader {
+    margin-bottom: 25px; 
+    scroll-margin: 75px;
+}
+.workexp {
+    font-family: "Alkes Semibold";
+}
+.workexp .card {
+    flex-direction: row;
+    align-items: center;
+}
+
+.workexp .card img {
+    width: 30%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: calc(0.25rem - 1px);
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .workexp .card img {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .workexp .card {
+        flex-direction: column;
+    }
+    .workexp .card-body {
+        padding: 0.5em 1.2em;
+    }
+    .card-body .card-text {
+        margin: 0;
+    }
+    .workexp .card img {
+        width: 70%;
+    }
+}
+/* Project Section*/
+#projectheader {
+    margin-bottom: 25px; 
+    scroll-margin: 75px;
+}
+.project {
+    font-family: "Alkes Semibold";
+}
+.project .card img {
+    width: 90%;
+    margin: auto;
+    margin-top: 5%; 
+}
+/* Patent Section */
+.patents {
+    font-family: "Alkes Semibold";
+
+}
+#patentheader {
+    margin-bottom: 25px;
+    scroll-margin: 75px;
+}
+
+/* Footer */
+#footer {
+    height: 100px; 
+    background-color: #F8F9fa;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 1000px) {
+    .blockcontainer {
+        display: block; 
+    }
+    .container {
+        width: 800px; 
+        max-width: 800px;
+    }
+    .container2 {
+        width: 800px; 
+        max-width: 800px;
+    }
+    #left {
+        margin: auto;
+        width: 245px;
+    }
+}
+@media (max-width: 800px) {
+    .blockcontainer {
+        display: block; 
+    }
+    .container {
+        width: 600px; 
+        max-width: 600px;
+    }
+    .container2 {
+        width: 600px; 
+        max-width: 600px;
+    }
+    #left {
+        margin: auto;
+        width: 245px;
+    }
+    #introduction {
+        font-size: 15px; 
+        font-family: "Alkes Semibold";
+    }
+}
+@media (max-width: 600px) {
+    .blockcontainer {
+        display: block; 
+    }
+    .container {
+        width: 400px; 
+        max-width: 400px;
+    }
+    .container2 {
+        width: 400px; 
+        max-width: 400px;
+    }
+    #left {
+        margin: auto;
+        width: 245px;
+    }
+    #introduction {
+        font-size: 15px; 
+        font-family: "Alkes Semibold";
+    }
+    #subcontainer {
+        display: block;
+        margin-bottom: 8px;
+    }
+    #experience {
+        margin-left: 0px; 
+    }
+    #right {
+        margin-left: 0px;
+    }
+}
+@media (max-width: 400px) {
+    .blockcontainer {
+        display: block; 
+    }
+    .container {
+        width: 330px; 
+        max-width: 330px;
+    }
+    .container2 {
+        width: 330px; 
+        max-width: 330px;
+    }
+    #left {
+        max-width: 200px;
+    }
+    .img-thumbnail {
+        width: 200px;
+    }
+    .icons {
+        width: 200px;
+    }
+    .workexp .card {
+        flex-direction: column;
+    }
 }

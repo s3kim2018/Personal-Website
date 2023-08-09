@@ -8,12 +8,12 @@
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="css/index.css">
         <!-- Bootstrap Font Icon CSS -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
         <!-- Fonts -->
         <link href="https://db.onlinewebfonts.com/c/acbeaadd4234995aaac4867e10abb481?family=Alkes+Semibold" rel="stylesheet">
-</head>
+        <link href="https://db.onlinewebfonts.com/c/fc3b8143000f0e6f34aeb41dd1d410ba?family=OCR-B+10+BT" rel="stylesheet"></head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light" style = "padding: 0px; padding-top: 10px; padding-bottom: 10px;">
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light" style = "padding: 0px; padding-top: 10px; padding-bottom: 10px;">
         <div class = "container">
         <a class="navbar-brand" href="#" style = "font-size: 25px; font-weight: bold;">Brian Kim</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -22,19 +22,26 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#">About Me</a>
+              <a class="nav-link" href="#home">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Patents</a>
+              <a class="nav-link" href="#researchheader">Research</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#workexpheader">Work Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projectheader">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#patentheader">Patents</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class = "container2">
+    <div  style = "position: fixed; top: 0;"></div>
+    <div class = "container2" id = "home">
       <div class = "blockcontainer">
         <div id = "left">
           <img src="img/profile.jpeg" class="img-thumbnail" width = "245px;" style = "border-radius: 30%;">
@@ -42,9 +49,9 @@
           <p class = "destext">University of California Berkeley</p>
           <p class = "destext">Computer Science Student</p>
           <div class = "icons">
-            <i class="bi bi-linkedin"></i>
-            <i class="bi bi-github"></i>
-            <i class="bi bi-file-pdf"></i>
+            <a target=”_blank” href = "https://www.linkedin.com/in/brian-kim-664794175/"><i class="bi2 bi bi-linkedin"></i></a>
+            <a target=”_blank” href = "https://github.com/s3kim2018"><i class="bi2 bi bi-github"></i></a>
+            <a target=”_blank” href = "img/resume.pdf"><i class="bi2 bi bi-file-pdf"></i></a>
           </div>
 
 
@@ -55,31 +62,217 @@
             I am a Undergraduate Computer Science & Statistics Student at UC Berkeley graduating in May 2024. <br><br>
             My Interest lies in Distributed Systems and Cloud Computing. I'm looking for new ways to run services on the cloud and build architectures
             that help with large workloads. I use insights from different domains (from Microservices to Software Defined Networking) to improve the stability and throughput of large systems. <br><br>
-            I'm currently working on <a href = "https://github.com/skyplane-project/skyplane">SkyPlane: </a>Inter-Cloud bulk data transfer interface, advised by Professor Ion Stoica and Joseph E. Gonzalez. <br><br>
-            I'm also working on <a href = "https://github.com/JIPCAD/JIPCAD">JIPCAD: </a>A Joint-Interactive-Procedural CAD Tool used for mathmatical 3D modeling, Advised by Professor Carlo H Sequin.
+            I'm currently working on <a target=”_blank” href = "https://github.com/skyplane-project/skyplane">SkyPlane: </a>Inter-Cloud bulk data transfer interface, advised by Professor Ion Stoica and Joseph E. Gonzalez. <br><br>
+            I'm also working on <a target=”_blank” href = "https://github.com/JIPCAD/JIPCAD">JIPCAD: </a>A Joint-Interactive-Procedural CAD Tool used for mathmatical 3D modeling, Advised by Professor Carlo H Sequin.
           </p>
-          <span id = "addresses">
-            <i class="bi bi-envelope align-middle"></i>&nbsp;&nbsp;s3kim2018[at]berkeley.edu
+          <span id = "addresses" style = "font-family: 'OCR-B 10 BT'">
+            <i class="bi3 bi bi-envelope align-middle"></i>s3kim2018[at]berkeley.edu
           </span> <br>
-          <span id = "addresses">
-            <i class="bi bi-geo-alt-fill align-middle"></i></i>&nbsp;&nbsp;San Francisco Bay Area
+          <span id = "addresses" style = "font-family: 'OCR-B 10 BT'">
+            <i class="bi3 bi bi-geo-alt-fill align-middle"></i></i>San Francisco Bay Area
           </span>
+          <br>
           <div id = "subcontainer">
             <div id = "education">
+              <h5>Education</h5>
+              <div class = "univheader">
+                <i class="bi3 bi-mortarboard align-middle"></i>
+                <p>University of California, <br> Berkeley<br>
+                  <span class = "desc">B.A. Computer Science, Statistics<br>
+                    Aug 2018 ~ May 2024 <br>
+                    Military Service: 2021 ~ 2023 <br>
+                    CS UpperDiv GPA: 3.74/4.00
+                  </span>
+                </p>
+              </div>
 
             </div>
             <div id = "experience">
-  
+              <h5>Work Experience</h5>
+              <div class = "univheader">
+                <i class="bi3 bi bi-briefcase align-middle"></i>
+                <p>Samsung SDS<br>
+                  <span class = "desc">Software Enginnering Intern<br>
+                    Samsung Nexprime Cloud SCM <br>
+                    June, 2023 ~ Aug. 2023 <br>
+                  </span>
+                </p>
+              </div> <br>
+              <div class = "univheader">
+                <i class="bi3 bi bi-briefcase align-middle"></i>
+                <p>Juniper Networks<br>
+                  <span class = "desc">Software Enginnering Intern<br>
+                    CN2 Automation <br>
+                    May, 2021 ~ Aug. 2021 <br>
+                  </span>
+                </p>
+              </div> <br>
+              <div class = "univheader">
+                <i class="bi3 bi bi-briefcase align-middle"></i>
+                <p style = "margin-bottom: 0px;">Aware<br>
+                  <span class = "desc">Head of Enginnering<br>
+                    Financial Startup <br>
+                    Aug, 2021 ~ Nov. 2022 <br>
+                  </span>
+                </p>
+              </div>
             </div>
           </div>
-
         </div>
+      </div>  
+      <hr class="mt-4 mb-4"/>
+      <div class = "research" id = "researchmenu">
+        <h2 id = "researchheader">Research</h2>
+        <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="img/skylab.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style = "margin-bottom: 5px;">Berkeley SkyLab : Skyplane &nbsp;&nbsp;<a target=”_blank” href = "https://github.com/skyplane-project/skyplane"><i class="bi bi-box-arrow-up-right"></i></a></h5>
+              <p class="card-text" style = "margin-bottom: 0px;">Advised by Professor Ion Stoica and Professor Joseph Gonzalez</p>
+              <p class="card-text" style = "margin-bottom: 10px;"><small class="text-muted">July 2023 - Present</small></p>
+              <p class="card-text"><small> 
+                &#x2022; Collected IP ranges for Microsoft Azure, allowing Skyplane to detect Azure region based on IP address. <br>
+                &#x2022; Integrated Skyplane CLI and Library with Google Bigquery, enabling inter and intra cloud data transfers to and from Google Bigquery.<br>
+              </small></p>
 
+
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/eecs.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style = "margin-bottom: 5px;">Joint-Interactive-Procedural CAD Tool : JIPCAD &nbsp;&nbsp;<a target=”_blank” href = "https://github.com/JIPCAD/JIPCAD"><i class="bi bi-box-arrow-up-right"></i></a></h5>
+              <p class="card-text" style = "margin-bottom: 0px;">Advised by Professor Carlo H. Séquin</p>
+              <p class="card-text" style = "margin-bottom: 10px;"><small class="text-muted">Sept 2020 - Present</small></p>
+              <p class="card-text"><small>&#x2022; Developed an error reporting module for JIPCAD’s graphic generation language. <br>
+                &#x2022; Lead Dynamic Scenes development: Built Modules for Orthogonal and Perspective Displays under a specified frustum. Added new Ambient, Directional, and Cone lighting features. <br>
+                &#x2022; Made the Sharpness and Catmull-Clark Subdivision features more robust through in-scene Merging. Allowed users to define Hierarchical Coloring of faces.</p></small>
+            </div>
+          </div>
+        </div>
       </div>
+      <hr class="mt-4 mb-4"/>
+      <div class = "workexp">
+        <h2 id = "workexpheader">Work Experience</h2>
+        <div class="card">
+          <img class="card-img-top" src="img/samsung.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style = "margin-bottom: 0px;">Samsung SDS</h5>
+            <p class="card-text" style = "margin-bottom: 0px;">Software Development Intern | Samsung Nexprime SCM &nbsp;&nbsp;<a target=”_blank” href = "https://www.samsungsds.com/en/scm/scm.html"><i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">June 2023 - Aug 2023</small></p>
+            <p class="card-text"><small> 
+              &#x2022; Built a Verification Server which is designed to be hosted on a Virtual Machine.<br>
+              &#x2022; Built a lightweight C++ applet, deployed on Kubernetes, that verifies the license of the Cloud SCM Platform.<br>
+              &#x2022; Designed/Implemented a trobleshooting tool that checks the server status of the Verification Server.<br>
+              &#x2022; Gave a Tech Talk to the Samsung SCM team about deploying monolithic platforms to the cloud.<br>
+            </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/juniper.png" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style = "margin-bottom: 0px;">Juniper Networks</h5>
+            <p class="card-text" style = "margin-bottom: 0px;">Software Development Intern | CN2 &nbsp;&nbsp;<a target=”_blank” href = "https://www.juniper.net/us/en/products/sdn-and-orchestration/contrail/cloud-native-contrail-networking.html"><i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">May 2021 - Aug 2021</small></p>
+            <p class="card-text"><small> 
+              &#x2022; Participated in the development of the Cloud-Native Contrail Networking (CN2) platform and Implemented software that visualizes
+              Kubernetes, OpenStack, or OpenShift components on a Go web server.<br>
+              &#x2022; Designed and implemented automated testing features, allowing users of CN2 to write custom testing protocols in JSON format. The custom tests check against existing components and visualizes missing or malfunctioning components.<br>
+              &#x2022; Contributed to the successful launch of CN2 and published a patent, “Analysis System for Software Defined Architectures (2022, 12)”<br>
+            </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/aware.jpg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style = "margin-bottom: 0px;">Aware Technologies</h5>
+            <p class="card-text" style = "margin-bottom: 0px;">Head of Enginnering &nbsp;&nbsp;<a target=”_blank” href = "https://awarelab.io/"><i class="bi bi-box-arrow-up-right"></i></a></p>
+            <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">Aug 2021 - Nov 2022</small></p>
+            <p class="card-text"><small> 
+              &#x2022; Led the development of a Financial Commentary and Analysis Web Service Startup, resulting in 1000+ customer growth and securing a $100,000 investment from the government.<br>
+              &#x2022; Designed and implemented the article website, complete with user registration, post-viewing/editing interface, post recommendations,
+              subscription interface, and an admin management page with Django and MySQL Database.<br>
+              &#x2022; Supported Continuous Integration to our web service: <br> [feature proposal -> development -> local testing -> deployment -> monitoring].<br>
+            </small></p>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="img/soldier.jpeg" alt="Card image cap">
+          <div class="card-body">
+            <h5 class="card-title" style = "margin-bottom: 0px;">Military Service (Republic of Korea Army)</h5>
+            <p class="card-text" style = "margin-bottom: 0px;">Sergeant, Squad Leader</p>
+            <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">Nov 2021 - May 2023</small></p>
+            <p class="card-text"><small> 
+              &#x2022; Took a 2 year break from university to serve as a Linguist for the Republic of Korea Army, Combined Forces Command, Signal Unit.<br>
+            </small></p>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4"/>
+      <div class = "project">
+        <h2 id = "projectheader">Projects</h2>
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="img/distai.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style = "margin-bottom: 0px;">DIST.AI &nbsp;&nbsp;<a target=”_blank” href = "https://distai.herokuapp.com/"><i class="bi bi-box-arrow-up-right"></i></a></h5>
+              <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">June 2021</small></p>
+              <p class="card-text"><small>
+                &#x2022; Detects people from a video via YOLO Architecture Neural Network <br>
+                &#x2022; Distinguishes lines/groups of people using MSTs and K-Means algorithm. <br>
+                &#x2022; Generates a heat map of the most crowded areas of the video frame. </small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/graph.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style = "margin-bottom: 0px;">Graph Traversal Visualizer&nbsp;&nbsp;<a target=”_blank” href = "https://s3kim2018.github.io/Graph-Traversal-Visualisation/"><i class="bi bi-box-arrow-up-right"></i></a></h5>
+              <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">Jan 2020</small></p>
+              <p class="card-text"><small>
+                &#x2022; Built a web application that visualizes graph traversal algorithms in a Grid. <br>
+                &#x2022; Supports BFS, DFS, Dijkstra’s, A*, and Kruskal’s algorithm. <br>
+                &#x2022; Built a web application that visualizes graph traversal algorithms. </small>
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="img/chess.jpeg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title" style = "margin-bottom: 0px;">Chess AI&nbsp;&nbsp;<a target=”_blank” href = "https://s3kim2018.github.io/Game-of-Chess/"><i class="bi bi-box-arrow-up-right"></i></a></h5>
+              <p class="card-text" style = "margin-bottom: 0px;"><small class="text-muted">Jan 2020</small></p>
+              <p class="card-text"><small>
+                &#x2022; Built a Chess game in the web, which supports Player vs Player and Player vs AI <br>
+                &#x2022; Built a Chess AI engine with Minimax Algorithm and Alpha Beta Pruning. <br> </small>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="mt-4 mb-4"/>
+      <div class = "patents">
+        <h2 id = "patentheader">Patents</h2>
+        <div class = "univheader">
+          <i class="bi3 bi bi-file-earmark-text"></i>
+          <p>ANALYSIS SYSTEM FOR SOFTWARE-DEFINED NETWORK ARCHITECTURES<br>
+            <span class = "desc">JNP3631-US<br>
+              Filed Dec. 2022, Not yet Published <br>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div id = "footer">
+      <div class = "container2">
+        <p style = "padding-top: 25px;">&copy; 2023 Brian Kim <br>
+        <a target=”_blank” href = "img/resume.pdf">Résumé</a> | <a target=”_blank” href = "https://www.linkedin.com/in/brian-kim-664794175/">LinkedIn</a> | <a target=”_blank” href = "https://github.com/s3kim2018">GitHub</a> </p>
+      </div>
+
     </div>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src = "js/index.js"></script>
 </body>
